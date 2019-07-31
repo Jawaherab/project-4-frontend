@@ -5,30 +5,32 @@ import './Header.scss'
 
 const authenticatedOptions = (
   <React.Fragment>
-    <Link to="/change-password">Change Password</Link>
+     <Link to="/create">Create </Link>
+     <Link to="/trees">My Post</Link>
+     <Link to="/map">map</Link>
     <Link to="/sign-out">Sign Out</Link>
   </React.Fragment>
 )
 
-const unauthenticatedOptions = (
-  <React.Fragment>
-    <Link to="/sign-up">Sign Up</Link>
-    <Link to="/sign-in">Sign In</Link>
-  </React.Fragment>
-)
+// const unauthenticatedOptions = (
+//   <React.Fragment>
+//     <Link to="/sign-up">Sign Up</Link>
+//     <Link to="/sign-in">Sign In</Link>
+//   </React.Fragment>
+// )
 
 const alwaysOptions = (
   <React.Fragment>
     <Link to="/">Home</Link>
+    <Link to="/dashboard">dashboard</Link>
   </React.Fragment>
 )
 
 const Header = ({ user }) => (
   <header className="main-header">
-    <h1>Uber, But For Taxis</h1>
+          { user && <span className="save"> Save Nature </span>}
     <nav>
-      { user && <span>Welcome, {user.email}</span>}
-      { user ? authenticatedOptions : unauthenticatedOptions }
+      { user ? authenticatedOptions : "" }
       { alwaysOptions }
     </nav>
   </header>

@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
 import { signIn } from '../api'
 import messages from '../messages'
+import  './auth.scss'
 
 class SignIn extends Component {
   constructor () {
@@ -26,7 +27,7 @@ class SignIn extends Component {
     signIn(this.state)
       .then(res => setUser(res.data.user))
       .then(() => alert(messages.signInSuccess, 'success'))
-      .then(() => history.push('/'))
+      .then(() => history.push('/map'))
       .catch(error => {
         console.error(error)
         this.setState({ email: '', password: '' })
@@ -38,6 +39,12 @@ class SignIn extends Component {
     const { email, password } = this.state
 
     return (
+      
+      <div className="auth "> 
+      <div  className="signup" >  
+      <h1> Don't have an account? </h1>
+        <div  className="regist" type="submit"> <Link to={`/sign-up`}> <div></div> </Link> </div>
+        </div>
       <form className='auth-form' onSubmit={this.onSignIn}>
         <h3>Sign In</h3>
         <label htmlFor="email">Email</label>
@@ -58,8 +65,13 @@ class SignIn extends Component {
           placeholder="Password"
           onChange={this.handleChange}
         />
-        <button type="submit">Sign In</button>
+        
+        <div className="signin " >
+        <button type="submit" className="btn btn-light">Sign In</button>
+        </div> 
+       
       </form>
+      </div>
     )
   }
 }

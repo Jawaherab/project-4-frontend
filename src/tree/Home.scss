@@ -1,0 +1,104 @@
+$charcoal: #ccc;
+
+.main {
+  position: relative;
+  align-items: center;
+  border-bottom: 1px solid $charcoal;
+  width: 100%;
+  padding: 0 20px;
+  padding: 68px;
+  padding-top: 150px;
+  top:100%;
+  background-color: white;
+  border: 2px solid rgb(246, 255, 248);
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 3px;
+  filter: drop-shadow(0 0 0.75rem rgb(246, 255, 248));
+  font-weight: 800;
+  transition: .2s ease-in;
+  
+  &:hover {
+    filter: drop-shadow(0 0 1.75rem rgb(246, 255, 248));
+  }
+
+}
+
+
+.ved{
+  width: 100%;
+  height: 100;
+  background-color: white;
+  margin-bottom: 6%;
+
+  video{
+    margin-left: 68px;
+    width: 90%;
+  }
+
+}
+
+.img1{
+  width: 100%;
+
+}
+
+.card{
+  position: absolute;
+  top: 175px;
+  left: 6%;
+  width: 50%;
+  height:   280px;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  p{
+    color: rgb(1, 36, 1);
+    font-size: 20px;
+    font-family: monospace;
+
+  }
+}
+
+.ved2{
+  position: absolute;
+  left: 63%;
+  top: -2px;
+  width:64.9vh;
+ 
+
+  video{
+    margin-left: 80px;
+ 
+   
+  }
+
+}
+
+.images{
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  top: 2990px;
+  left: 6%;
+
+}
+
+.d-block .w-100{
+  height: 100vh;
+}
+
+
+.home-route {
+  position: relative;
+  background-size: cover;
+  margin: 0px;
+  background-position: center;
+  
+} 
+
+
+.home-bg video {
+  // height: 200vh; 
+  width: 100%
+}
+

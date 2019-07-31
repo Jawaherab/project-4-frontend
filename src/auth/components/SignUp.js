@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
 import { signUp, signIn } from '../api'
 import messages from '../messages'
+
+import './auth.scss'
 
 class SignUp extends Component {
   constructor () {
@@ -28,7 +30,7 @@ class SignUp extends Component {
       .then(() => signIn(this.state))
       .then(res => setUser(res.data.user))
       .then(() => alert(messages.signUpSuccess, 'success'))
-      .then(() => history.push('/'))
+      .then(() => history.push('/map'))
       .catch(error => {
         console.error(error)
         this.setState({ email: '', password: '', passwordConfirmation: '' })
@@ -40,7 +42,15 @@ class SignUp extends Component {
     const { email, password, passwordConfirmation } = this.state
 
     return (
-      <form className='auth-form' onSubmit={this.onSignUp}>
+  <div  className="back"> 
+    <div className="Home"> 
+ 
+       <div  className="sign" >  
+       <h1> Have an account? </h1>
+       <div className="regist"  type="submit">  <Link to={`/sign-in`}>  <div> </div>   </Link>  </div>
+       </div>
+
+       <form className='auth-form' onSubmit={this.onSignUp}>
         <h3>Sign Up</h3>
 
         <label htmlFor="email">Email</label>
@@ -70,8 +80,15 @@ class SignUp extends Component {
           placeholder="Confirm Password"
           onChange={this.handleChange}
         />
-        <button type="submit">Sign Up</button>
+        <div className="signin " >
+        <button type="submit" className="btn btn-light">Sign Up</button> 
+        </div>
+        
+        
       </form>
+      
+      </div>
+     </div>
     )
   }
 }

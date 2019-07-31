@@ -29,6 +29,20 @@ $charcoal: #ccc;
   background-color: $error;
 }
 
+// body{
+//   background-image: url('./7.jpeg');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   animation: animate-bg 50s infinite linear;
+  
+// }
+
+@keyframes animate-bg {
+  from { background-size: 100%; background-position: 0% 0%; }
+  50% { background-size: 120%; background-position: 0% 20% }
+  to { background-size: 100%; background-position: 0% 0%; }
+}
+
 .auth-form {
   display: flex;
   flex-direction: column;
@@ -46,3 +60,115 @@ $charcoal: #ccc;
     max-width: 200px;
   }
 }
+
+
+.home-route {
+  position: relative;
+  background-size: cover;
+  margin: 0px;
+  background-position: center;
+  
+} 
+
+.virtical{
+  position: absolute; 
+  bottom: 300px; 
+  left: 140px; 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  color:rgb(1, 41, 1);
+  background-color: #ffffff;
+  text-align: center;
+  margin-left: 44%;
+  opacity: 0.6;
+  transition: 0.3s;
+  width: 13%;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-bottom: 1.3%;
+  padding-top: 1.3%;
+  
+}
+
+.virtical2 {
+  position: absolute; 
+  bottom: 300px; 
+  left: 100px; 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  color: white;
+  border: solid 3px #ffffff;
+  text-align: center;
+  margin-left: 30%;
+  transition: 0.3s;
+  width: 13%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  
+  
+}
+
+.home-bg video {
+  /* height: 100vh; */
+  width: 100%
+}
+
+
+
+  .logo h1  {
+    position: absolute;
+    top: 220px;
+    left: 450px;
+    font-family: Anton, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+  }
+
+    .indicator{
+      position:absolute;
+      width:50px;
+      height:50px; 
+      left: 70px;
+      bottom: 200px;
+      transform:rotate(45deg);
+      span{
+        position:absolute;
+        left:20;
+        top:100;
+        width:100%;
+        height:100%;
+        box-sizing:border-box;
+        border:none;
+        border-bottom:3px solid #fff;
+        border-right:3px solid #fff;
+        animation:animate 1s linear infinite;
+        &:nth-child(1){
+          top:-30px;
+          left:-30px;
+          animation-delay:0s;
+        }
+        &:nth-child(2){
+          top:-15px;
+          left:-15px;
+          animation-delay:0.2s;
+        }
+        &:nth-child(3){
+          top:0;
+          left:0;
+          animation-delay:0.4s;
+        }
+        &:nth-child(4){
+          top:15px;
+          left:15px;
+          animation-delay:0.6s;
+        }
+        &:nth-child(5){
+          top:30px;
+          left:30px;
+          animation-delay:0.8s;
+        }
+      } 
+    }
+    
+   
