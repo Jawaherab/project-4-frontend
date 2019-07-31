@@ -1,6 +1,8 @@
 import React,{Component} from 'react'
 import {create} from './api'
 import {withRouter } from 'react-router-dom'
+
+import img1  from './10.png'
 class TreeCreate extends Component{
     state = {
         dataForm:{
@@ -36,23 +38,27 @@ class TreeCreate extends Component{
 
     render(){
         return(
-            <form onSubmit={this.handleSubmit}>
-                <label>Name</label>
-                <input onChange={this.handleChange} type="text" name="name" value={this.state.dataForm.name}/>
-                <label>Image</label>
-                <input  onChange={this.handleChange} type="text" name="imageUrl" value={this.state.dataForm.imageUrl}/>
-                <label>Type</label>
-                <input  onChange={this.handleChange} type="text" name="type" value={this.state.dataForm.type}/>
-                <label>Address</label>
-                <input  onChange={this.handleChange} type="text" name="address" value={this.state.dataForm.address}/>
-                <label>Number Of Trees</label>
-                <input onChange={this.handleChange} type="number" name="numbers" value={this.state.dataForm.numbers}/>
-                    
-                    <p>lat: {this.props.match.params.lat}</p>
-                    <p>lng: {this.props.match.params.lng}</p>
-                <button type="submit">Create</button>
-               
-            </form>
+            <div className='flex'>  
+            <img  className='img10'src={img1} />
+            <form  className="card4" onSubmit={this.handleSubmit}> 
+            <label>Name</label>
+            <input onChange={this.handleChange} type="text" name="name" value={this.state.dataForm.name}/>
+            <label>Image</label>
+            <input  onChange={this.handleChange} type="text" name="imageUrl" value={this.state.dataForm.imageUrl}/>
+            <label>Type</label>
+            <input  onChange={this.handleChange} type="text" name="type" value={this.state.dataForm.type}/>
+            <label>Address</label>
+            <input  onChange={this.handleChange} type="text" name="address" value={this.state.dataForm.address}/>
+            <label>Number Of Trees</label>
+            <input onChange={this.handleChange} type="number" name="numbers" value={this.state.dataForm.numbers}/>
+                
+                <p>lat: {this.props.match.params.lat}</p>
+                <p>lng: {this.props.match.params.lng}</p>
+            <button type="submit">Create</button>
+           
+        </form>
+        </div>
+           
         )
     }
 }

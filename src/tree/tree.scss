@@ -20,7 +20,53 @@
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
   } 
+
 }
+
+.card4{
+    //  position: relative; 
+    display: flex; 
+    flex-direction: row;
+    flex-flow: wrap; 
+    justify-items: flex-start;
+    justify-content: space-evenly; 
+    float: left;
+    width: 40%; 
+    margin-top: 10% ; 
+    margin-bottom: 10% ; 
+    margin-right: 20px; 
+    margin-left: 190px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+        label{
+            padding: 30px;
+            margin: 30px
+        }
+
+        input{
+        padding:   30px;
+        margin: 30px
+        }
+ 
+
+}
+//  .flex{
+//     display: flex; 
+//     position: relative;
+//     flex-direction: row;
+//     justify-items: flex-start;
+//     float: left;
+//     width: 50%;
+//  }
+ .img10{
+     position: absolute;
+     right: -1px;
+     width: 40%;
+     top:50%;
+ }
+
 
   .card3{
     //  position: relative; 
@@ -32,7 +78,7 @@
     justify-content: space-evenly; 
     float: left;
     width: 70%; 
-    margin-top: 20%; 
+    margin-top: 13%; 
     margin-right: 20px; 
     margin-left: 190px;
     background-color: white;
@@ -45,14 +91,7 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin-top: 30px;
     } 
-
-   
-
-
 }
-
-
-
 .backg{
     background-color: white;
     width: 100%;
