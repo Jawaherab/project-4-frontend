@@ -111,7 +111,7 @@ export class MapContainer extends Component {
           onClose={this.onClose}
         >
 
-         <a href={`#/trees/${this.state.treeId}`} > We need a trees here </a>   
+         <a href={`#/trees/${this.state.treeId}`} > We need trees here </a>   
           {/* <div>
             <h4>{this.state.selectedPlace.name}</h4>
           </div> */}
