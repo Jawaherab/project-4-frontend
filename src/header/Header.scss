@@ -13,7 +13,8 @@ $charcoal: #bbb;
 	filter: drop-shadow(0 0 0.75rem rgb(246, 255, 248));
 	font-size: 20px;
 	font-weight: 800;
-	transition: .2s ease-in;
+  transition: .2s ease-in;
+  background-color: rgb(19, 27, 4);
   
 	&:hover {
 		filter: drop-shadow(0 0 1.75rem rgb(246, 255, 248));
@@ -35,6 +36,7 @@ $charcoal: #bbb;
   display: flex;
   flex-grow: 1;
   justify-content: flex-end;
+  
 }
 
 @media (max-width: 600px) {

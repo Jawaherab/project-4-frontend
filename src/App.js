@@ -100,7 +100,7 @@ class App extends Component {
           return (
             <div>
             <div className='home-route'> 
-            <Header/>
+            {/* <Header/> */}
         
              
               <div className ='home-bg'> 
@@ -112,7 +112,7 @@ class App extends Component {
                 <div className="logo" > <h1> SAVE NATURE </h1> </div>  
                
                 <Link className = 'virtical' to='/sign-up'> Join Us </Link> 
-                <Link className = 'virtical2' to='/'> Read More </Link> 
+                <Link className = 'virtical2' to='/dashboard'> Read More </Link> 
              
                
                 <div className="indicator">
@@ -136,12 +136,21 @@ class App extends Component {
         }}  />
 
         {/* <Route path='/trees' component={Treeindex}/> */}
+
+    
         </main>
+
+
+        
+        {/* <footer>
+          <h1> hello</h1>
+        </footer> */}
 
        
     
               
       </React.Fragment>
+      
     )
   }
 }

@@ -61,7 +61,7 @@ class Home extends Component {
               
             </div>
 
-            <MDBContainer className="images">
+      <MDBContainer className="images">
         <MDBCarousel
           activeItem={1}
           length={3}

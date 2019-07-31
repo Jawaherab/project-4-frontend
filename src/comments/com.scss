@@ -1,0 +1,33 @@
+.comment{
+    width: 100%;
+    background-color: white;
+    margin-top: 50px;
+}
+
+
+.form{
+    margin: 0 auto;
+    width: 70%;
+    padding: 50px 0;
+    text-align: center
+}
+
+
+.comments{
+    display: flex;
+    width: 100%;
+   
+    
+    img{
+        width: 50%;
+    }
+
+    .list-group-item{
+
+        width: 50%;
+        font-size: 200%;
+        text-align: center;
+        padding-top: 50px;
+     
+    }
+}

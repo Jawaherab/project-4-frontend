@@ -44,7 +44,7 @@ $charcoal: #ccc;
 
 .card{
   position: absolute;
-  top: 175px;
+  top: 4px;
   left: 6%;
   width: 50%;
   height:   280px;
@@ -61,28 +61,44 @@ $charcoal: #ccc;
 
 .ved2{
   position: absolute;
-  left: 63%;
-  top: -2px;
+  left: 53%;
+  top: 5px;
   width:64.9vh;
  
 
   video{
     margin-left: 80px;
  
-   
+    object-fit: none;
+    object-position: center;
+    max-height: 700px;
+
   }
 
 }
 
-.images{
+.images {
   width: 50%;
-  height: 100vh;
+  min-height: 50vh; 
+  max-height: 50vh;
   position: absolute;
-  top: 2990px;
+  top: 2800px;
   left: 6%;
 
 }
 
+.container .images{
+  height: 390px;
+    max-height: 390px;
+    /* margin: 0 auto; */
+    width: 50%;
+    /* align-items: center; */
+    /* text-align: center; */
+}
+.carousel {
+      height: 390px !important;
+    max-height: 390px !important;
+}
 .d-block .w-100{
   height: 100vh;
 }

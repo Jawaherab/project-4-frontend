@@ -46,10 +46,11 @@ class Commentindex extends Component{
             {this.state.comments.map((comment, index) => (
               <div key={index}> 
                 {/* <Link to={`/comments/${comment._id}`} ><h2>Comment:</h2> </Link> */}
-                <ul class="list-group">
-                <li class="list-group-item">  <p> {comment.comment}</p>  </li>
-                </ul>
-              
+                <div className="comments">
+                <img src={comment.image} />
+                <h3 class="list-group-item">  {comment.comment}</h3>
+                </div>
+                
                <button onClick={ () => this.destroy(comment._id)}> Delete </button>
                {/* <Link to={`/comments/${comment._id}/edit`} > <button> Edit Comment</button> </Link> */}
               </div> 

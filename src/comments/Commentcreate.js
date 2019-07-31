@@ -42,16 +42,20 @@ class Commentcreate extends Component{
             //     <input  onChange={this.handleChange} type="text" name="image" value={this.state.dataForm.image}/>
             //     <button type="submit">Comment</button>
             // </form>
-             <form onSubmit={this.handleSubmit}>
+             <form  className="form" onSubmit={this.handleSubmit}>
             <div class="form-group">
               <label for="formGroupExampleInput">Comment</label>
               <input type="text" class="form-control" id="formGroupExampleInput" onChange={this.handleChange} type="text" name="comment" value={this.state.dataForm.comment}/>
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput2">Image</label>
-              <input type="text" class="form-control" id="formGroupExampleInput2" onChange={this.handleChange} type="text" name="image" value={this.state.dataForm.image}/>
-              <button type="submit">Comment</button>
+              <textarea class="form-control" id="formGroupExampleInput2" onChange={this.handleChange} type="text" name="image" value={this.state.dataForm.image}/>
+{/*             
+             <label>  </label> */}
+             {/* <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea> */}
             </div>
+            <button type="submit">Comment</button>
+
           </form>
         )
     }

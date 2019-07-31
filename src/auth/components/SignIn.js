@@ -43,7 +43,7 @@ class SignIn extends Component {
       <div className="auth "> 
       <div  className="signup" >  
       <h1> Don't have an account? </h1>
-        <div  className="regist" type="submit"> <Link to={`/sign-up`}> <div></div> </Link> </div>
+        <div  className="regist1" type="submit"> <Link to={`/sign-up`}> <div></div> </Link> </div>
         </div>
       <form className='auth-form' onSubmit={this.onSignIn}>
         <h3>Sign In</h3>
